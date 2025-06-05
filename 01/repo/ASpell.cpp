@@ -26,3 +26,13 @@ std::string ASpell::getEffects()
 	return effects;
 }
 
+ASpell(const std::string& name, const std::string effects) :
+name(name),
+effects(effects)
+{}
+
+
+void ASpell::launch(const ATarget& target)
+{
+	target.getHitBySpell(*this);
+}

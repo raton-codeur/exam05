@@ -2,5 +2,4 @@
 
 int main()
 {
-	std::cout << "test\n";
 }
